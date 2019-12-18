@@ -177,7 +177,7 @@ namespace Boxes
 
         public string ShippingID()
         {
-            string id = String.Format(Label.GetHashCode("04468")+ "v" + volume + "m" + Mass);
+            string id = String.Format(Label.GetHashCode()+ "v" + volume + "m" + Mass);
 
             return id;
         }
