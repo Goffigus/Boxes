@@ -4,11 +4,16 @@ using static Boxes.Box;
 
 namespace Boxes
 {
+    /// <summary>
+    /// Program Class
+    /// Starts the Boxes program and outputs the volume, mass, and surface area to the user's console.
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
             Box box1;
+
             UI ui = new UI();
             box1 = ui.CreateBox();
 

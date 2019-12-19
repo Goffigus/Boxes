@@ -4,11 +4,15 @@ using System.Text;
 
 namespace Boxes
 {
+    /// <summary>
+    /// Box Class
+    /// Contain the dimensions and finds the volume, mass, and surface area of a box
+    /// </summary>
     class Box
     {
 
-        //public double height { get; set; }
-        double height;
+        
+        double height; //
         double length;
         double width;
         double density;
@@ -21,6 +25,9 @@ namespace Boxes
         double surfaceArea;
         double volume;
         double mass;
+        /// <summary>
+        /// Height of the box
+        /// </summary>
         public double Height
         {
             get
@@ -35,6 +42,9 @@ namespace Boxes
                 mass = findMass(density, volume);
             }
         }
+        /// <summary>
+        /// Length of the box
+        /// </summary>
         public double Length
         {
             get
@@ -120,9 +130,13 @@ namespace Boxes
 
             madeUp = 10;
         }
+
         /// <summary>
         /// Constructor that sets height, length, and width at construction
         /// </summary>
+        /// <param name="H">Height</param>
+        /// <param name="L">Length</param>
+        /// <param name="W">Width</param>
         public Box(double H, double L, double W)
         {
             Height = H;
@@ -136,10 +150,10 @@ namespace Boxes
         /// <summary>
         /// Constructor that sets height, length, width, and density at construction
         /// </summary>
-        /// <param name="H"></param>
-        /// <param name="L"></param>
-        /// <param name="W"></param>
-        /// <param name="D"></param>
+        /// <param name="H">Height</param>
+        /// <param name="L">Length</param>
+        /// <param name="W">Width</param>
+        /// <param name="D">Density of material</param>
         public Box(double H, double L, double W, double D)
         {
             Height = H;
